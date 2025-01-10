@@ -1,0 +1,40 @@
+A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle.
+It operates like a line where elements are added at one end (rear) and removed from the other end (front).
+
+Basic Operations of Queue Data Structure
+Enqueue (Insert): Adds an element to the rear of the queue.
+Dequeue (Delete): Removes and returns the element from the front of the queue.
+Peek: Returns the element at the front of the queue without removing it.
+Empty: Checks if the queue is empty.
+Full: Checks if the queue is full.
+
+In queue we have two pointers one pointing to front and other pointing to rear, initially when queue is empty or when we declare
+the queue, rear is at -1 which indicated queue is empty and then it points to last inserted element. Front is always at 0 in a 
+non-empty queue.
+queue implemented using array takes O(n) time for remove and peek and O(1) to add
+
+A Circular Queue is an extended version of a normal queue where the last element of the queue is connected to the first element
+of the queue forming a circle.
+In normal queue when we remove element we push remaining elements one step ahead to fill empty front position but in circular queue 
+we move front to one step back and the empty front position can be used to fill elements. In normal queue we update rear as
+ rear++ but in this we use formula
+rear=(rear+1)%size. this condition is used as when we are at end of queue and now want to move our pointer to start of queue again i.e 0.
+ During initialization rear and front are -1. If (rear+1)%size=front that means queue is full.
+
+Main use of queues are task scheduling in CPU and priority queues
+The unused memory locations in the case of ordinary queues can be utilized in circular queues.
+
+Circular queue implemented using array takes O(1) time for peek,remove and add.
+
+poll and remove defined in collection for queue element remove differ in the fact that poll returns null if queue is empty and remove throws exception
+
+PriorityQueue - Creates a PriorityQueue with the default initialcapacity (11) that orders its elements according to their natural ordering.
+Queue is an interface, therefore its implementing classes like LinkedList, PriorityQueue and  ArrayDequeue are used
+
+
+NULL elements can be added to LinkedList but not in ArrayDeque
+LinkedList Generally uses more memory compared to ArrayDeque due to the overhead of storing pointers.
+Requires extra memory for maintaining the linked structure.
+Random access takes O(n) time in LL as requires traversing the LL while in ArrayDequeue elements are stored in contiguous
+memory locations so random access takes O(1) time.
+So if you don't have to support NULL elements && looking for less memory && efficiency of add/remove elements at both ends, ArrayDeque is the best

@@ -1,0 +1,39 @@
+HashSet does not store duplicate values
+HashSet takes constant O(1) time for each insert search or remove
+Sets do not have any index so we use iterator
+
+HashMap stores data in form of key value or in pairs we can say, keys are always unique values can be non-unique
+HashMap is iterated using keys or entrySet, iterator is not used in this, simply we go through the keys or entries one by one
+the methods of HashMap like get containsKey remove put etc. have O(1) time complexity in average case
+Worst Case:
+Insertion (worst): O(n), where n is the size of the hash map. This occurs when there are many hash collisions, leading to linear probing or other collision resolution strategies that may involve traversing the entire hash map.
+Lookup and Deletion (worst): O(n), for the same reason as insertion.
+
+Internally HashMap is implemented using Array of LinkedList - A HashMap uses array of buckests to store key-value pairs 
+Suppose we have to store 6 pairs in HashMap
+then internally an array of say size 4 is created and in each index of that array we have a linked list
+like index 0 has a LL of two nodes index 1 has of one node and like this all pairs are distributed. Now 
+when we put a new element, first it is checked if it already exists then update the value otherwise create
+a new pair, So if it does not exist then the key is hashed and the returned integer is taken as an index of array
+and on that index a new node is created, so we didn't had to traverse through whole record like in array or LL
+we simply went to the index and placed the record their. Now their can be a LL already at that index and we
+have to add one more node to that which requires traversing but the length of the LL at each index is controlled as -
+n=number of records/pairs to insert in HashMap and N=size of array
+n/N=lambda<=k(some constant)
+so the lambda which is nothing but nodes in one LL is always less than k and if it becomes more than that
+when we insert more records in HashMap then the array size(N) is also increased which satisfies the condition
+lambda<=k, so put and get takes constant time only which is O(lambda) and lambda can be equal to constant k
+in worst case, so it becomes O(k) and time complexity comes as constant only which can be taken as O(1).
+This process of increasing the size of array when lambda becoming greater than k is known as rehashing.
+
+Hashing means changing data from one form to another. There are pre defined hashing algorithms like SHA1, SHA256, etc.
+Which take one input and give some output which is hashed
+
+In Java, the hashCode() method is used to generate a unique integer representation of an object.
+This method is crucial for data structures like HashMap and HashSet, which use hash codes to efficiently store and retrieve objects.
+ Purpose:
+The hashCode() method returns an integer value that represents the object. This value is used by hash-based collections to determine where to store the object. 
+Contract:
+The hashCode() method must adhere to certain rules:
+If two objects are equal according to the equals() method, they must have the same hash code. 
+If the hashCode() method is called multiple times on the same object during the execution of an application, it must consistently return the same integer, provided no information used in equals() comparisons on the object is modified.

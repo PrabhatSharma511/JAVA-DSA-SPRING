@@ -1,0 +1,18 @@
+A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle. 
+Key Operations on Stack Data Structures
+Push: Adds an element to the top of the stack.
+Pop: Removes the top element from the stack.
+Peek: Returns the top element without removing it.
+IsEmpty: Checks if the stack is empty.
+IsFull: Checks if the stack is full (in case of fixed-size arrays).
+
+In code Stack can be implemented in 3 ways Arrays,ArrayList,LinkedList.
+Stack is implicit and explicit, implicit is made in code or memory like in recursion and explicit is stack is made by us.
+
+Applications of Stack Data Structures
+Recursion
+Expression Evaluation and Parsing
+Depth-First Search (DFS)
+Undo/Redo Operations
+Browser History
+Function Calls

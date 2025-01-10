@@ -1,0 +1,10 @@
+arrayList insert takes O(n) time complexity while LL insert has O(1)
+arayList u can search directly like arr[1] but in LL u traverse from starting node, we cannot go directly
+like in arrayList so search has O(n) time complexity
+In LL non-contigious memory is allocated and each node points to the next node whereas in arrayList continuous bloacks of memory are allocated like a dynamic array
+LL has variable size and non-contiguous memory	
+LL is made up of nodes.Each node in LL ha 2 parts data and pointer/reference/adress to next node.
+In LL we have adress of HEAD node only which has adress of next node and so on, last node points to null, so HEAD should not be modified until unless a node is added at first of list
+Any static variable is associated with class rather an object of class.
+
+Always store start of the LL in some variable why traversing or making new LL, because only start or head is the single oint of reference in LL

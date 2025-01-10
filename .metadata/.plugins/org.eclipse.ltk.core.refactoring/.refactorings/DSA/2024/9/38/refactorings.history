@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Stack.StackClass&apos; to &apos;StackUsingLL&apos;&#x0D;&#x0A;- Original project: &apos;DSA&apos;&#x0D;&#x0A;- Original element: &apos;Stack.StackClass&apos;&#x0D;&#x0A;- Renamed element: &apos;Stack.StackUsingLL&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StackClass&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Stack{StackClass.java[StackClass" matchStrategy="1" name="StackUsingLL" qualified="false" references="true" similarDeclarations="false" stamp="1726924161736" textual="false" version="1.0"/>
+</session>
