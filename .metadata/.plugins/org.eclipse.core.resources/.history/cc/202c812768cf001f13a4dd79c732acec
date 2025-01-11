@@ -1,0 +1,31 @@
+Tree is a hierarchical data structure. In tree traversal -1 indicates a null node.
+Preorder traversal - first comes the Root then left subtree and then right subtree
+Time complexity for preorder traversal is O(n) because we got to each node one by one
+
+Inorder traversal - root comes in middle, first left subtree then root then right subtree.
+
+BFS traversal of tree is level order traversal
+DFS traversal of tree is inorder,postorder,preorder because in that we are going into depth
+
+going from root to deepest leaf is height of tree
+
+Diameter of Tree - Number of Nodes in the Longest path between any 2 nodes
+
+Binary Search Tree - it is known so because of the search operation takes O(h) time where h is height of tree
+and in average cases where tree is balanced logn is height of tree so search in BST takes O(logn) time in case of balcanced trees whereas in normal tree
+search takes O(n) time. BST used for fast lookup
+
+BST is a binary tree with some properties added-
+-Left subtree Nodes less than the root
+-Right subtree Nodes greater than the root
+-Left and Right Subtrees are also BST with no duplicates
+
+Inorder traversal of BST gives a sorted sequence. Insert in BST has time complexity O(h) same as search
+
+Delete a Node - 
+
+1.No Children- delete node and return null to parent
+2.One Children- delete node and replace with child node
+3.Two Children- Replace the value to be deleted with its inorder successor then delete the node for inorder successor
+*inorder successor always has 0 or 1 child
+Inorder successor by default in BST is leftmost node in right subtree
