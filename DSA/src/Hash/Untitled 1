@@ -6,7 +6,8 @@ HashMap stores data in form of key value or in pairs we can say, keys are always
 HashMap is iterated using keys or entrySet, iterator is not used in this, simply we go through the keys or entries one by one
 the methods of HashMap like get containsKey remove put etc. have O(1) time complexity in average case
 Worst Case:
-Insertion (worst): O(n), where n is the size of the hash map. This occurs when there are many hash collisions, leading to linear probing or other collision resolution strategies that may involve traversing the entire hash map.
+Insertion (worst): O(n), where n is the size of the hash map. This occurs when there are many hash collisions, 
+leading to linear probing or other collision resolution strategies that may involve traversing the entire hash map.
 Lookup and Deletion (worst): O(n), for the same reason as insertion.
 
 Internally HashMap is implemented using Array of LinkedList - A HashMap uses array of buckests to store key-value pairs 

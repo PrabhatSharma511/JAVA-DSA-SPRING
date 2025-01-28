@@ -36,6 +36,10 @@ public class MyThreadMethods extends Thread{
 //	@Override
 //	public void run() {
 //		for(int i=1;i<=5;i++) {
+//			String a="";
+//			for(int j=0;j<100000;j++) {
+//				a=a+" ";
+//			}
 //			System.out.println(Thread.currentThread().getName()+"- Priority: "+Thread.currentThread().getPriority()+" - count "+i);
 //			try {
 //				Thread.sleep(100);

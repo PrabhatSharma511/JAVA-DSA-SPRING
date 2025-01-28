@@ -19,8 +19,8 @@ public class MyThreadStates extends Thread{
 		t.start();
 		System.out.println(t.getState());
 		Thread.sleep(200);
-//		System.out.println(Thread.currentThread().getState());
-		System.out.println(t.getState());
+		System.out.println(Thread.currentThread().getState());
+		System.out.println(t.getState()+"jh");
 		t.join();
 		System.out.println(t.getState());
 	}
