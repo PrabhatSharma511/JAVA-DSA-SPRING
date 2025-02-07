@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Objects;
 
 class Student{
 	private String name;
@@ -20,7 +21,25 @@ class Student{
 	}
 	public double getGpa() {
 		return gpa;
-	}	
+	}
+	
+//	@Override
+//	public boolean equals(Object o) {
+//		if(this == o) {
+//			return true;
+//		}
+//		if(o==null || getClass()!=o.getClass()) {
+//			return false;
+//		}
+//		Student student = (Student)o;
+//		return Double.compare(gpa, student.gpa)==0 && Objects.equals(name, student.name);
+//	}
+//	
+//	@Override
+//	public int hashCode() {
+//		return Objects.hash(name,gpa);
+//	}
+	
 }
 
 //class MyComparator implements Comparator<Integer>{
@@ -48,6 +67,15 @@ public class ArrayListMain {
 	public static void main(String[] args) throws Exception, Exception {
 		
 		List<Student> students = new ArrayList<>();
+		
+//		List<Student> studentsNew = new ArrayList<>();
+//		studentsNew.add(new Student("Charlie",3.5));
+//		studentsNew.add(new Student("Bob",3.7));
+//		studentsNew.add(new Student("Alice",3.5));
+//		studentsNew.sort(null);
+
+		
+		
 		students.add(new Student("Prabhat3",67));
 		students.add(new Student("Prabhat1", 80));
 		students.add(new Student("Prabhat2", 84));
