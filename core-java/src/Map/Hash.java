@@ -1,4 +1,4 @@
-package Collections;
+package Map;
 
 public class Hash {
 
