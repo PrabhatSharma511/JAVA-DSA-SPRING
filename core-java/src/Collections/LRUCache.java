@@ -25,7 +25,7 @@ public class LRUCache<K,V> extends LinkedHashMap<K, V> {
 		students.put("Bob",90);
 		students.put("Alice",78);
 		students.put("Ram",99);
-//		students.get("Bob"); OR students.put("Bob",23);
+		students.get("Bob"); //OR students.put("Bob",23);
 		students.put("Prabhat",95);
 				
 		for(Map.Entry<String,Integer> student:students.entrySet()) {
