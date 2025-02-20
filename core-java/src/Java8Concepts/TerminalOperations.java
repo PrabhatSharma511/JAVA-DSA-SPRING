@@ -70,7 +70,7 @@ public class TerminalOperations {
 		System.out.println(count+" Count");
 		
 		//min max
-		System.out.println("Max: "+Stream.of(1,2,3,4,5).max((o1,o2)->o1-o2)); //comparator can be passed and according to that max will not mean the aximum in all cases it will give result according to comparator
+		System.out.println("Max: "+Stream.of(1,2,3,4,5).max((o1,o2)->o1-o2)); //comparator can be passed and according to that max will not mean the maximum in all cases it will give result according to comparator
 		System.out.println("Min: "+Stream.of(1,2,3,4,5).min(Comparator.naturalOrder()));
 
 		
@@ -92,6 +92,7 @@ public class TerminalOperations {
 		Stream<String> nameStream = names.stream();
 		nameStream.forEach(System.out::println);
 //		nameStream.map(String::toUpperCase);//gives exception
+
 
 
 	}

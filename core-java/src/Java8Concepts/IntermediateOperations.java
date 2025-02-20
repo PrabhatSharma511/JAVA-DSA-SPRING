@@ -64,6 +64,7 @@ public class IntermediateOperations {
 				);
 		System.out.println(sentences.stream().flatMap(sen->Arrays.stream(sen.split(" "))).map(x->x.toUpperCase()).toList());
 		
+		
  	}
 	
 }
