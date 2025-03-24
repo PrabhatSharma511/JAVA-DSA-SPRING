@@ -19,7 +19,7 @@ public class PriorityQueueDemo {
 		}
 		
 		//Internal working
-		//priority queue is implemented as a min heap by default(for natiral ordering)
+		//priority queue is implemented as a min heap by default(for natural ordering)
 
 	}
 	

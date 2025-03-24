@@ -19,7 +19,7 @@ public class StackDemo {
 		System.out.println(topElement);
 		System.out.println(stack.isEmpty());
 		System.out.println(stack.size());
-		System.out.println(stack.get(2));
+		System.out.println(stack.get(2)+"g");
 		
 		int search = stack.search(3);
 		System.out.println(search);

@@ -11,6 +11,8 @@ public class QueueDemo {
 		q.add(1);//enqueue add at last only
 		q.add(2);
 		q.add(3);
+		q.add(null);
+
 		System.out.println(q);
 		q.remove();//dequeue remove from front only
 		System.out.println(q);
@@ -19,7 +21,6 @@ public class QueueDemo {
 		Queue<Integer> q2 = new LinkedList<>();
 		
 		q2.add(4);
-		
 		System.out.println(q2.remove());//throws exception if empty
 		System.out.println(q2.poll());//null, otherwise element
 
@@ -32,7 +33,7 @@ public class QueueDemo {
 		System.out.println(q3.add(34));
 //		q3.add(34);
 		q3.offer(67);
-		q3.offer(21);//no exception returns true/false that element added or not
+		System.out.println(q3.offer(21));//no exception returns true/false that element added or not
 		System.out.println(q3.add(21));
 //		q3.add(21); //gives exception queue is full
 

@@ -11,7 +11,7 @@ public class CF {
 	public static void main(String[] args) throws InterruptedException, ExecutionException {
 		CompletableFuture<String> f1 = CompletableFuture.supplyAsync(()->{
 			try {
-				Thread.sleep(5000);
+				Thread.sleep(500);
 				System.out.println("worker");
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
@@ -19,6 +19,8 @@ public class CF {
 			}
 			return "ok";
 		});
+		System.out.println(f1.get()+" f1.get");
+		System.out.println("after f1.get");
 		CompletableFuture<String> f2 = CompletableFuture.supplyAsync(()->{
 			try {
 				Thread.sleep(5000);

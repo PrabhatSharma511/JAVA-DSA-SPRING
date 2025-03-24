@@ -10,7 +10,7 @@ public class Substring {
 	public static void main(String[] args) {
 		String str = "ababa";
 		List<String> lis = listOfSubstrings(str);
-//		System.out.println(lis);
+		System.out.println(lis);
 
 		System.out.println((new HashSet<>(lis)).size());
 	}
@@ -18,7 +18,7 @@ public class Substring {
 	private static List<String> listOfSubstrings(String str) {
 		List<String> list = new ArrayList<>();
 		for(int i =0;i<str.length();i++) {
-			for(int j=i;j<=str.length();j++) {
+			for(int j=i+1;j<=str.length();j++) {
 				list.add(str.substring(i, j));
 			}
 		}

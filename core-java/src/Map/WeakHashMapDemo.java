@@ -8,10 +8,10 @@ public class WeakHashMapDemo {
 	public static void main(String[] args) {
 		WeakHashMap<String, Image> imageCache = new WeakHashMap<>();
 		
-//		imageCache.put(new String("img1"),new Image("Image1"));
-//		imageCache.put(new String("img2"),new Image("Image2"));
+		imageCache.put(new String("img1"),new Image("Image1Out"));
+		imageCache.put(new String("img2"),new Image("Image2Out"));
 		
-		loadCache(imageCache);
+//		loadCache(imageCache);
 		System.out.println(imageCache);
 //		key1=null;
 //		key2=null;

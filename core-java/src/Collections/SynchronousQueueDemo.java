@@ -5,7 +5,7 @@ import java.util.concurrent.SynchronousQueue;
 
 public class SynchronousQueueDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		// It cannot store elements, capacity of atmost one element.
 		BlockingQueue<String> bq = new SynchronousQueue<>();
@@ -33,8 +33,8 @@ public class SynchronousQueueDemo {
 			}
 		});
 		
-		producer.start();
-		consumer.start();
+//		producer.start();
+//		consumer.start();
 	}
 	
 }

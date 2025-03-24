@@ -99,7 +99,7 @@ public class Java8Demo {
 		BinaryOperator<Integer> bo = (x,y)->x+y;
 		System.out.println(bo.apply(89,2)); // for bifunction with same type of operands and result
 		
-		//Method Reference --> use method without invoking and in place of lamda expression
+		//Method Reference --> use method without invoking and in place of lambda expression
 		List<String> listmf = Arrays.asList("Ram","Shyam","Ghanshyam");
 //		listmf.forEach(x->System.out.println(x));
 		listmf.forEach(System.out::println);

@@ -24,9 +24,7 @@ public class DelayQueueDemo {
 class DelayedTask implements Delayed{
 	String taskName;
 	long startTime;
-	
-	
-	
+
 	public DelayedTask(String taskName, long delay,TimeUnit unit) {
 		this.taskName = taskName;
 		this.startTime = System.currentTimeMillis()+unit.toMillis(delay);
@@ -52,8 +50,4 @@ class DelayedTask implements Delayed{
 		return taskName;
 	}
 
-
-	
-	
-	
 }

@@ -55,14 +55,19 @@ public class IntermediateOperations {
 				Arrays.asList("Pear","Grape")
 				);
 		
-		System.out.println(listOfLists.stream().flatMap(x->x.stream()).map(String::toUpperCase).toList());
+		System.out.println(listOfLists.stream().peek(System.out::println).flatMap(x->x.stream()).map(String::toUpperCase).toList());
 		
 		List<String> sentences = Arrays.asList(
 				"Hello World",
 				"Java Streams are powerful",
 				"flatmap is useful"
 				);
+		System.out.println(sentences.stream().flatMap(x->Arrays.stream(x.split(" "))).map(x->x.toUpperCase()).toList());
 		System.out.println(sentences.stream().flatMap(sen->Arrays.stream(sen.split(" "))).map(x->x.toUpperCase()).toList());
+		
+		System.out.println("-----------------------------");
+		
+		
 		
 		
  	}
