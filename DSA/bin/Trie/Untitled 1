@@ -1,0 +1,36 @@
+Trie is also known as digital search tree, prefix tree or retrieval tree. Trie is a tree only and in this each node can have
+any number of childrens k, so it is also knows as k-ary tree. Each node in a Trie can have up to k children, where k is
+typically the number of possible characters (e.g., 26 for lowercase English letters or 256 for extended ASCII where all uppercase,lowercase and special chars are included).
+Time complexity for search in trie is O(l) where l is length
+of word to be searched. 
+Trie is always preferred for fast search and in trie root is an empty node.
+Prefix is not repeated meaning if we have two words say apple and app then their same prefix which is app will be saved one time only
+when each word ends the ending node is marked as end-of-word node
+
+Insert in trie has time complexity of O(l) where l is length of longest word
+
+✅ Use a Trie if:
+You need fast search for words with shared prefixes (e.g., autocomplete, spell checking).
+You are working with a large dataset of words where lookup time is critical.
+You need to perform prefix-based operations (e.g., find all words starting with "pre").
+❌ Avoid a Trie if:
+Memory usage is a concern (Trie consumes more space than HashSet due to pointers).
+You don’t need prefix-based lookups.
+
+for any string its substrings are
+all prefix of all suffix OR all suffix of all prefix
+
+Q- count unique substrings
+-find all suffix of given string
+-create a trie from those suffixes
+-total number of trie nodes = count of unique prefix
+So if we store some words in a trie then number of unique prefixes of those words will be equal to the number
+of nodes in trie
+  
+A Trie stores all possible unique prefixes of the given strings. This is because each node in the Trie
+represents a unique prefix formed by traversing from the root to that node.
+Each node in the Trie represents a prefix.
+If multiple words share a common prefix, they share nodes up to that prefix.
+The total number of nodes in the Trie is equal to the total number of unique prefixes stored.
+
+
