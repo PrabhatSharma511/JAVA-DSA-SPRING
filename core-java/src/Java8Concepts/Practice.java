@@ -153,8 +153,13 @@ public class Practice {
 		List<String> phrases = Arrays.asList("hello world", "java streams", "advanced tricks");
 
 		System.out.println(phrases.stream().flatMap(x->Arrays.stream(x.split(" "))).collect(Collectors.toList()));
-
-
+		
+		//Q25 - Using stream reverse this string "the sky is blue"
+		String s = "the sky is blue";
+		String[] sa = s.split(" ");
+		List<String> sl = Arrays.asList(sa);
+		Collections.reverse(sl);
+		System.out.println(sl.stream().collect(Collectors.joining(" ")));
 
 
 
